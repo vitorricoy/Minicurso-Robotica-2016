@@ -1,0 +1,361 @@
+// Import CSS from "node_modules" and "bower_components"
+// thanks to Stylus' "import css" and "paths" options
+@import 'highlight.js/styles/monokai_sublime.css'
+
+html,
+body
+  overflow hidden
+
+h1, h2, h3, h4, h5, h6
+  text-align center
+
+li li li li
+  font-size 80%
+  color gray
+
+/// Tutorial
+$tutorial-right = 20px
+.tutorial
+  position absolute
+  right $tutorial-right
+  bottom 80px
+  padding .5em .75em
+  border-radius 20px
+  background-color rgba(255, 255, 255, .7)
+  font-family 'Cookie', cursive
+  font-size 2em
+  transition opacity 300ms ease-out
+  opacity 0
+  pointer-events none
+  &.tutorial-on
+    opacity 1
+    animation bounce 1s ease-out 0s infinite alternate
+
+@keyframes bounce
+  from
+    right: $tutorial-right;
+
+  to
+    right: $tutorial-right * 2;
+
+
+
+for num in (2..5)
+  .multi-column-list-{num}
+    column-count num
+    column-gap 3em
+
+
+.texto-binario
+  animation shine 1s ease-out 0s 1 normal
+.texto-normal
+  animation shine2 1s ease-out 0s 1 normal
+
+@keyframes shine
+  from
+    opacity .25
+  to
+    opacity 1
+
+@keyframes shine2
+  from
+    opacity .25
+  to
+    opacity 1
+
+table
+  max-width 760px
+  text-align center
+
+td:not(:last-child), th:not(:last-child)
+  border-right 1px solid rgba(0,0,0,.2)
+
+td
+  padding 3px
+
+th
+  padding 3px
+
+tr
+  border 1px solid rgba(0,0,0,.4)
+
+tr:nth-of-type(2n) > td
+  background-color rgba(255,255,255,.4)
+
+thead > tr
+  background-color #555
+  color white
+
+kbd
+  padding .1em .6em
+  font-size .8em
+  border 1px solid #ccc
+  font-family Consolas, Menlo, Monaco, monospace
+  background-color #f7f7f7
+  color #333
+  box-shadow 0 4px 0 rgba(0,0,0,0.2), 0 0 0 2px #fff inset
+  border-radius 3px
+  display inline-block
+  margin 0 .1em
+  text-shadow 0 1px 0 #fff
+  line-height 1.3
+  white-space nowrap
+  position relative
+  top 0
+  transition top 40ms ease-out, box-shadow 40ms ease-out
+  &:hover
+    top 4px
+    box-shadow 0 0 0 rgba(0,0,0,0.2), 0 0 0 2px #fff inset
+
+figure.bulleted-image
+  position relative
+  &>img
+    position absolute
+    left 0
+    top 0
+    opacity 0
+    &.bespoke-bullet-current
+      opacity 1
+
+//-------------------
+// ascii table
+table.ascii
+  th
+    background-color #607d8b
+    color white
+  td,th
+    &:nth-of-type(3n):not(:last-of-type)
+      border-right 4px double rgba(0,0,0,0.5)
+  td
+    &:nth-of-type(-n+9)
+      background-color #cfd8dc
+    &:nth-of-type(-n+6)
+      background-color #eceff1
+    &:nth-of-type(-n+3)
+      background-color #cfd8dc
+  tr:nth-of-type(odd)
+    td
+      background-color lighten(#cfd8dc, 30%)
+
+//-------------------
+// stoppable gifs
+.stoppable-gif
+  cursor pointer
+
+//--------------------
+// utilities
+img[alt^="right"]
+  float right
+
+img[alt^="left"]
+  float left
+
+$portrait-size = 175px
+.portrait,
+.portrait img
+  display inline-block
+  width $portrait-size
+  height $portrait-size
+  border-radius ($portrait-size / 2)
+  figcaption
+    background-color transparent
+
+.portrait.right
+  float right
+
+
+.note
+  padding 1em
+  margin 0
+  position relative
+  background-color #fe6
+  background-image linear-gradient(#fe6, #f5da41, #f6ef97)
+  font-family 'Mate', serif
+
+  &:before,
+  &:after
+    content: '';
+    display: block;
+    width: 90%;
+    height: 20%;
+    position: absolute;
+    bottom: 3px;
+    background-color: rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    opacity: 1;
+    z-index: -1;
+  &:before
+    left: 10px;
+    transform: rotate(-1deg);
+  &:after
+    right: 10px;
+    transform: rotate(1deg);
+
+  h1
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -5px;
+
+  p
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 20px;
+
+  a
+    color: #333
+
+  strong
+    color #BB2A9E
+
+.fullsreen-image,
+img[alt$="fullscreen"]
+  max-width 800px
+img[alt$="fullscreen-1"]
+  max-width 760px
+img[alt$="fullscreen-2"]
+  max-width 720px
+img[alt$="bigimage"]
+    max-width 680px
+img[alt$="bigimage-1"]
+    max-width 640px
+img[alt$="bigimage-2"]
+    max-width 620px
+img[alt$="bigimage-3"]
+    max-width 580px
+
+
+.layout-split-2
+  flex-direction row
+  display flex
+  justify-content center
+  align-items stretch
+  height 100%
+
+  &>section
+    width 50%
+    flex-grow 1
+    text-align center
+
+
+
+
+// ------------------------------------------------------------
+// Slide backdrops
+
+// Each backdrop background fades in/out
+.bespoke-backdrop
+  opacity 0
+  will-change opacity
+  transition opacity 200ms ease-out 0ms
+  &.bespoke-backdrop-active
+    z-index 1
+    opacity 1
+    transition-delay 800ms
+
+.bespoke-slide[data-bespoke-backdrop]
+  z-index 2
+
+// Common properties for background backdrops
+full-dimension-backdrop(repeat)
+  if repeat
+    background-size initial
+    background-repeat repeat
+  else
+    background-size cover
+    background-repeat no-repeat
+  width 100%
+  &.bespoke-backdrop-active
+    height 100%
+
+// backdrop slides
+.detour.bespoke-backdrop
+  background-image url(../images/desvio-faded.jpg)
+  full-dimension-backdrop(false)
+
+.bespoke-slide[data-bespoke-backdrop="detour"]
+  background-color rgba(255,255,255,.6)
+  border-radius 8px
+
+.os-icons.bespoke-backdrop
+  background-image url(../images/os-icons.jpg)
+  full-dimension-backdrop(false)
+  background-size contain
+  background-color white
+  background-position 50% 50%
+.os-mac.bespoke-backdrop
+  background-image url(../images/os-mac.jpg)
+  full-dimension-backdrop(false)
+  background-size cover
+  background-color white
+  background-position 100% 50%
+.os-windows.bespoke-backdrop
+  background-image url(../images/os-windows.jpg)
+  full-dimension-backdrop(false)
+  background-position-y 100%
+.os-unix.bespoke-backdrop
+  background-image url(../images/os-unix.jpg)
+  full-dimension-backdrop(false)
+.os-linux.bespoke-backdrop
+  background-image url(../images/os-linux.jpg)
+  full-dimension-backdrop(false)
+  background-position-y 100%
+
+.bespoke-slide[data-bespoke-backdrop="os-windows"],
+.bespoke-slide[data-bespoke-backdrop="os-unix"],
+.bespoke-slide[data-bespoke-backdrop="os-mac"],
+.bespoke-slide[data-bespoke-backdrop="os-linux"]
+  color white
+  h1
+    color white
+    font-weight bolder
+    text-shadow 2px 2px black
+
+.terminal.bespoke-backdrop-active
+  background-image url(../images/terminal-big.jpg)
+  full-dimension-backdrop(false)
+  background-position-y 0%
+
+.bespoke-slide[data-bespoke-backdrop="terminal"]
+  h1
+    padding .2em .5em
+    border-radius 10px
+    text-shadow 2px 1px black
+    background-color rgba(white, 0.65)
+
+
+.cmd-and-powershell.bespoke-backdrop-active
+  background-image url(../images/cmd-and-powershell.png)
+  full-dimension-backdrop(false)
+  background-position 50% 0%
+
+.bespoke-slide[data-bespoke-backdrop="cmd-and-powershell"]
+  h1
+    padding .2em .5em
+    border-radius 10px
+    text-shadow 2px 1px black
+    background-color rgba(white, 0.65)
+
+.bitten.bespoke-backdrop-active,
+.bitten2.bespoke-backdrop-active,
+.bitten3.bespoke-backdrop-active,
+.bitten4.bespoke-backdrop-active
+  background-image url(../images/bitten.png)
+  background-position 100% 100%
+  width 100%
+  height 100%
+  background-repeat no-repeat
+  opacity 1
+.bitten2.bespoke-backdrop-active
+  background-image url(../images/bitten2.png)
+  background-position: 0 0
+.bitten3.bespoke-backdrop-active
+  background-image url(../images/bitten3.png)
+  background-position: 0 100%
+.bitten4.bespoke-backdrop-active
+  background-image url(../images/bitten4.png)
+  background-position: 100% 0
+.bitten.bespoke-backdrop,
+.bitten2.bespoke-backdrop,
+.bitten3.bespoke-backdrop,
+.bitten4.bespoke-backdrop
+  transition none
