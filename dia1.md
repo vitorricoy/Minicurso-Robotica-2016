@@ -181,3 +181,74 @@ M.I.T. Media Labs iniciou a comercialização do Lego Mindstorms.
 ---
 ## Roda Boba
 ![](images/Boba5.png)
+---
+
+# Programando o Express-Bot
+- Agora vamos iniciar a programação do robô, fazendo um programa em que o robô se move e reproduz sons.
+---
+## Programa de Exemplo
+![](images/prog1.png)
+- Digite um nome para o programa.
+---
+## Programa de Exemplo
+![](images/prog2.png)
+- Insira um motor (Move) e ajuste a potencia (Power) para 50 e a duração para 3
+segundos.
+---
+## Programa de Exemplo
+![](images/prog3.png)
+- Entre com o objeto de temporização.
+---
+## Programa de Exemplo
+![](images/prog4.png)
+- Ajuste o tempo para 2 segundos.
+---
+## Programa de Exemplo
+![](images/prog5.png)
+- Insira outro bloco de movimento e modifique-o para girar para a esquerda. Modi
+fique a potencia para 50 e mantenha o tempo em 1 segundo. 
+---
+## Programa de Exemplo
+![](images/prog6.png)
+- Entre com outro bloco temporizador e ajuste para 3 segundos.
+---
+## Programa de Exemplo
+![](images/prog7.png)
+- Adicione um bloco de som e selecione a opção Tone.
+---
+## Programa de Exemplo
+![](images/prog8.png)
+- Insira um laço (Loop) de repetição no programa. 
+---
+## Programa de Exemplo
+![](images/prog9.png)
+- Coloque o bloco no início do programa.
+---
+## Programa de Exemplo
+![](images/prog10.png)
+- Arraste o mouse em diagonal e selecione todos os comandos posteriores ao laço.
+---
+## Programa de Exemplo
+![](images/prog11.png)
+- Insira os comandos dentro do laço.
+---
+## Programa de Exemplo
+![](images/prog12.png)
+- Ajuste o critério de interrupção do laço a partir do sensor. 
+---
+## Programa de Exemplo
+![](images/prog13.png)
+- Selecione o sensor ultrassônico.
+---
+## Programa de Exemplo
+![](images/prog14.png)
+- Ajuste a distância do sensor para 10 polegadas (inches).
+---
+## Programa de Exemplo
+![](images/prog15.png)
+- Entre com um bloco de áudio para finalizar o programa quando o sensor ultrassônico for ativado.
+---
+## Programa de Exemplo
+![](images/prog16.png)
+- Ligue o cabo USB e faça o download do programa para o robô. Depois pressione
+o botão laranja do robô até que o que o programa entre em execução. 
