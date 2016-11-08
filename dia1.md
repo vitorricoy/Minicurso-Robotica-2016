@@ -22,7 +22,7 @@ objeto.
 Computers, and Powerful Ideas o
 M.I.T. Media Labs iniciou a comercialização do Lego Mindstorms.
 
-![](images/RCX-NXT-EV3.png)
+![](images/RCX-NXT-EV3.jpg)
 
 ---
 ## Logo
