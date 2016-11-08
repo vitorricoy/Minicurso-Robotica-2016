@@ -181,4 +181,3 @@ M.I.T. Media Labs iniciou a comercialização do Lego Mindstorms.
 ---
 ## Roda Boba
 ![](images/Boba5.png)
----
