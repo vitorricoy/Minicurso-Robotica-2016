@@ -2,9 +2,10 @@
 - Introdução
 - Logo
 - Lego
-     - Módulo de controle
-     - Seguidor de trajetória
+     - Express-Bot
+     - Sumô
      - Bluetooth
+     - Futebol de Robôs
 
 ---
 # Introdução
@@ -90,3 +91,94 @@ M.I.T. Media Labs iniciou a comercialização do Lego Mindstorms.
 
 ![](images/exemplo8.png)
 - E o último bloco indica um laço de repetição infinito, o que faz com que o programa seja executado novamente.
+---
+# Montando um Robô
+- Agora para realmente iniciarmos a parte prática, vamos montar um robô básico. O robô escolhido foi o "Express-Bot".
+---
+## Lado Esquerdo
+![](images/Esquerdo1.png)
+---
+## Lado Esquerdo
+![](images/Esquerdo2.png)
+---
+## Lado Esquerdo
+![](images/Esquerdo3.png)
+---
+## Lado Esquerdo
+![](images/Esquerdo4.png)
+---
+## Lado Esquerdo
+![](images/Esquerdo5.png)
+---
+## Lado Direito
+![](images/Direito1.png)
+---
+## Lado Direito
+![](images/Direito2.png)
+---
+## Lado Direito
+![](images/Direito3.png)
+---
+## Lado Direito
+![](images/Direito4.png)
+---
+## Lado Direito
+![](images/Direito5.png)
+---
+## Traseira
+![](images/Traseira1.png)
+---
+## Traseira
+![](images/Traseira2.png)
+---
+## Traseira
+![](images/Traseira3.png)
+---
+## Traseira
+![](images/Traseira4.png)
+---
+## Frente
+![](images/Frente1.png)
+---
+## Frente
+![](images/Frente2.png)
+---
+## Rodas
+![](images/Rodas1.png)
+---
+## Rodas
+![](images/Rodas2.png)
+---
+## Rodas
+![](images/Rodas3.png)
+---
+## Rodas
+![](images/Rodas4.png)
+---
+## Cabos
+![](images/Cabos1.png)
+---
+## Cabos
+![](images/Cabos2.png)
+---
+## Cabos
+![](images/Cabos3.png)
+---
+## Cabos
+![](images/Cabos4.png)
+---
+## Roda Boba
+![](images/Boba1.png)
+---
+## Roda Boba
+![](images/Boba2.png)
+---
+## Roda Boba
+![](images/Boba3.png)
+---
+## Roda Boba
+![](images/Boba4.png)
+---
+## Roda Boba
+![](images/Boba5.png)
+---
