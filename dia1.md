@@ -252,3 +252,23 @@ fique a potencia para 50 e mantenha o tempo em 1 segundo.
 ![](images/prog16.png)
 - Ligue o cabo USB e faça o download do programa para o robô. Depois pressione
 o botão laranja do robô até que o que o programa entre em execução. 
+---
+# Sumô
+- Agora, vamos construir robôs de sumô para lutarem!
+- Mas antes vamos ver as regras do sumô de robôs.
+---
+## Regras
+- Uma partida consistirá em 3 (três) rounds, cada round
+terá um tempo nominal de 1 (um) minuto, podendo
+ser acrescentado, a critério do juiz, 30 segundos. 
+- A equipe que ganhar dois rounds ou receber dois
+pontos de Yukô primeiro, será declarada vencedora. 
+- Uma equipe recebe um ponto
+de Yukô quando vence um round. 
+- Caso o tempo limite seja atingido antes de uma equipe atingir dois pontos de Yukô e uma das equipes tenha recebido
+um ponto de Yukô, enquanto a outra não tiver
+ganhado pontos, esta será a vencedora.
+- Um ponto de Yukô será concedido quando:
+    - Um robô legalmente forçar o corpo do robô oponente a tocar o espaço fora do Dojô (ringue).
+    - Quando o robô adversário tocar o espaço externo
+ao Dojô por si mesmo.
