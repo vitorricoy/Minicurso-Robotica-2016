@@ -70,4 +70,3 @@
 ## Exemplo de Programa - Escravo
 ![](images/blue13.png)
 - Faça o download do programa no NXT escravo.
----
