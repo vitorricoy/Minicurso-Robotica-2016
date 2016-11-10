@@ -8,15 +8,15 @@
      - Futebol de Robôs
 
 ---
-# Bluethoot
+# Bluetooth
 
-- O Bluethoot é uma forma de comunicação entre dois NXT's.
+- O Bluetooth é uma forma de comunicação entre dois NXT's.
 - Funciona no esquema de mestre-escravo, sendo possível um mestre ter até três escravos.
 
 ---
 # Exemplo de Programa
 
-- Para exemplificar o bluethoot, será feito um programa simples, em que um número é enviado e o escravo se move para frente quando recebe esse número.
+- Para exemplificar o bluetooth, será feito um programa simples, em que um número é enviado e o escravo se move para frente quando recebe esse número.
 
 ---
 ## Exemplo de Programa
